@@ -34,10 +34,13 @@ module.exports = {
     mocha: {
       timeout: 100000
     },
-    solc: {
-      optimizer: {
-        enabled: true,
-        runs: 200
+    compilers :{
+      solc: {
+        optimizer: {
+          enabled: true,
+          runs: 200
+        },
+        version: "^0.8.0"
       }
     }
 };
